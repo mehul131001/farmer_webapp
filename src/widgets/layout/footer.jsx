@@ -7,9 +7,9 @@ export function Footer({ brandName, brandLink, routes }) {
 
   return (
     <footer className="py-2">
-      <div className="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between">
-        <Typography variant="small" className="font-normal text-inherit">
-           Right Out of the Farm{" "}
+      <div className="flex w-full flex-wrap items-center justify-center text-center gap-6 ">
+        <Typography variant="small" className="font-normal text-inherit ">
+           Right Out of the Farm {" "}
           <HeartIcon className="-mt-0.5 inline-block h-3.5 w-3.5" /> {" "}
           <a
             href={brandLink}
