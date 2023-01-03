@@ -22,7 +22,7 @@ import {
 } from "@heroicons/react/24/solid";
 import {
   useMaterialTailwindController,
-  setOpenConfigurator,
+  // setOpenConfigurator,
   setOpenSidenav,
 } from "@/context";
 

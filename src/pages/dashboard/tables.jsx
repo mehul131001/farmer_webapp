@@ -15,16 +15,16 @@ export function Tables() {
   return (
     <div className="mt-12 mb-8 flex flex-col gap-12">
       <Card>
-        <CardHeader variant="gradient" color="blue" className="mb-8 p-6">
+        <CardHeader variant="gradient" color="green" className="mb-8 p-6">
           <Typography variant="h6" color="white">
-            Authors Table
+            Customers
           </Typography>
         </CardHeader>
         <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">
           <table className="w-full min-w-[640px] table-auto">
             <thead>
               <tr>
-                {["author", "function", "status", "employed", ""].map((el) => (
+                {["Customer", "Order detail", "Order Status", "Last Odered"].map((el) => (
                   <th
                     key={el}
                     className="border-b border-blue-gray-50 py-3 px-5 text-left"
@@ -41,7 +41,7 @@ export function Tables() {
             </thead>
             <tbody>
               {authorsTableData.map(
-                ({ img, name, email, job, online, date }, key) => {
+                ({ img, name, email, job, delivered, date }, key) => {
                   const className = `py-3 px-5 ${
                     key === authorsTableData.length - 1
                       ? ""
@@ -78,8 +78,8 @@ export function Tables() {
                       <td className={className}>
                         <Chip
                           variant="gradient"
-                          color={online ? "green" : "blue-gray"}
-                          value={online ? "online" : "offline"}
+                          color={delivered ? "green" : "amber"}
+                          value={delivered ? "delivered" : "pending"}
                           className="py-0.5 px-2 text-[11px] font-medium"
                         />
                       </td>
@@ -88,7 +88,7 @@ export function Tables() {
                           {date}
                         </Typography>
                       </td>
-                      <td className={className}>
+                      {/* <td className={className}>
                         <Typography
                           as="a"
                           href="#"
@@ -96,7 +96,7 @@ export function Tables() {
                         >
                           Edit
                         </Typography>
-                      </td>
+                      </td> */}
                     </tr>
                   );
                 }
@@ -106,16 +106,16 @@ export function Tables() {
         </CardBody>
       </Card>
       <Card>
-        <CardHeader variant="gradient" color="blue" className="mb-8 p-6">
+        <CardHeader variant="gradient" color="green" className="mb-8 p-6">
           <Typography variant="h6" color="white">
-            Projects Table
+            Reviews
           </Typography>
         </CardHeader>
         <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">
           <table className="w-full min-w-[640px] table-auto">
             <thead>
               <tr>
-                {["companies", "members", "budget", "completion", ""].map(
+                {["Crop", " Customers", "Reviews", "Ratings", ""].map(
                   (el) => (
                     <th
                       key={el}
@@ -194,7 +194,7 @@ export function Tables() {
                           />
                         </div>
                       </td>
-                      <td className={className}>
+                      {/* <td className={className}>
                         <Typography
                           as="a"
                           href="#"
@@ -205,7 +205,7 @@ export function Tables() {
                             className="h-5 w-5 text-inherit"
                           />
                         </Typography>
-                      </td>
+                      </td> */}
                     </tr>
                   );
                 }
