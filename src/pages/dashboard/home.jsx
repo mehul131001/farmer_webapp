@@ -197,7 +197,7 @@ export function Home() {
                 strokeWidth={3}
                 className="h-3.5 w-3.5 text-green-500"
               />
-              <strong>24%</strong> this month
+              <strong>24%</strong> this month (overall)
             </Typography>
           </CardHeader>
           <CardBody className="pt-0">
