@@ -7,12 +7,12 @@ export const conversationsData = [
   {
     img: "/img/team-2.jpeg",
     name: "Alexander",
-    message: "Awesome work, can you...",
+    message: "Awesome product, can you...",
   },
   {
     img: "/img/team-3.jpeg",
     name: "Ivanna",
-    message: "About files I can...",
+    message: "About order I can...",
   },
   {
     img: "/img/team-4.jpeg",

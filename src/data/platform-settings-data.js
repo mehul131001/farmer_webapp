@@ -4,15 +4,15 @@ export const platformSettingsData = [
     options: [
       {
         checked: true,
-        label: "Email me when someone follows me",
+        label: "Email me when someone wants to contact me",
       },
       {
         checked: false,
-        label: "Email me when someone answers on my post",
+        label: "Email me when someone recieves the order",
       },
       {
         checked: true,
-        label: "Email me when someone mentions me",
+        label: "Email me when someone reviews me",
       },
     ],
   },
@@ -21,7 +21,7 @@ export const platformSettingsData = [
     options: [
       {
         checked: false,
-        label: "New launches and projects",
+        label: "New Crops and Products",
       },
       {
         checked: true,
@@ -29,7 +29,7 @@ export const platformSettingsData = [
       },
       {
         checked: false,
-        label: "Subscribe to newsletter",
+        label: "Subscribe to get updates",
       },
     ],
   },

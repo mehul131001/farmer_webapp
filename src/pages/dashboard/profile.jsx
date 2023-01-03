@@ -25,8 +25,8 @@ import { platformSettingsData, conversationsData, projectsData } from "@/data";
 export function Profile() {
   return (
     <>
-      <div className="relative mt-8 h-72 w-full overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80)] bg-cover	bg-center">
-        <div className="absolute inset-0 h-full w-full bg-blue-500/50" />
+      <div className="relative mt-8 h-72 w-full overflow-hidden rounded-xl bg-[url('/img/bg-sign-in-basic.jpg')] bg-cover	bg-center">
+        <div className="absolute inset-0 h-full w-full bg-green-500/50" />
       </div>
       <Card className="mx-3 -mt-16 mb-6 lg:mx-4">
         <CardBody className="p-4">
@@ -46,7 +46,7 @@ export function Profile() {
                   variant="small"
                   className="font-normal text-blue-gray-600"
                 >
-                  CEO / Co-Founder
+                  Farmer
                 </Typography>
               </div>
             </div>
@@ -99,9 +99,9 @@ export function Profile() {
             </div>
             <ProfileInfoCard
               title="Profile Information"
-              description="Hi, I'm Alec Thompson, Decisions: If you can't decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
+              description="Hi, I'm Richard Davis."
               details={{
-                "first name": "Alec M. Thompson",
+                "first name": "Richard Davis",
                 mobile: "(44) 123 1234 123",
                 email: "alecthompson@mail.com",
                 location: "USA",
@@ -140,15 +140,15 @@ export function Profile() {
           </div>
           <div className="px-4 pb-4">
             <Typography variant="h6" color="blue-gray" className="mb-2">
-              Projects
+             Crops
             </Typography>
             <Typography
               variant="small"
               className="font-normal text-blue-gray-500"
             >
-              Architects design houses
+              Details of crops I deal with
             </Typography>
-            <div className="mt-6 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-6 grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4 ">
               {projectsData.map(
                 ({ img, title, description, tag, route, members }) => (
                   <Card key={title} color="transparent" shadow={false}>
@@ -160,7 +160,7 @@ export function Profile() {
                       <img
                         src={img}
                         alt={title}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full  bg-white  "
                       />
                     </CardHeader>
                     <CardBody className="py-0 px-1">
@@ -187,7 +187,7 @@ export function Profile() {
                     <CardFooter className="mt-6 flex items-center justify-between py-0 px-1">
                       <Link to={route}>
                         <Button variant="outlined" size="sm">
-                          view project
+                         view orders
                         </Button>
                       </Link>
                       <div>

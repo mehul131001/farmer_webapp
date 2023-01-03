@@ -1,10 +1,10 @@
 export const projectsData = [
   {
-    img: "/img/home-decor-1.jpeg",
-    title: "Modern",
-    tag: "Project #1",
+    img: "/img/logo-xd.png",
+    title: "Wheat",
+    tag: "BestSeller #1",
     description:
-      "As Uber works through a huge amount of internal management turmoil.",
+      "I deal with one of the finest wheats you could have in this country.",
     route: "/dashboard/profile",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
@@ -14,11 +14,11 @@ export const projectsData = [
     ],
   },
   {
-    img: "/img/home-decor-2.jpeg",
-    title: "Scandinavian",
-    tag: "Project #2",
+    img: "/img/logo-atlassian.png",
+    title: "Rice",
+    tag: "Famous for it's aroma",
     description:
-      "Music is something that every person has his or her own specific opinion about.",
+      "I bring you the most aromatic rice you will ever have.",
     route: "/dashboard/profile",
     members: [
       { img: "/img/team-4.jpeg", name: "Alexander Smith" },
@@ -28,11 +28,11 @@ export const projectsData = [
     ],
   },
   {
-    img: "/img/home-decor-3.jpeg",
-    title: "Minimalist",
-    tag: "Project #3",
+    img: "/img/logo-slack.png",
+    title: "Pulses",
+    tag: "Finest",
     description:
-      "Different people have different taste, and various types of music.",
+      "Here are some most marinated and naturally pulses that you could bring to you.",
     route: "/dashboard/profile",
     members: [
       { img: "/img/team-1.jpeg", name: "Romina Hadid" },
@@ -42,11 +42,11 @@ export const projectsData = [
     ],
   },
   {
-    img: "/img/home-decor-4.jpeg",
-    title: "Gothic",
-    tag: "Project #4",
+    img: "/img/logo-spotify.jpeg",
+    title: "SugarCane",
+    tag: "One of it's kind",
     description:
-      "Why would anyone pick blue over pink? Pink is obviously a better color.",
+      "Fresh and juicy sugarcanes grown all naturally without any harnful treatments.",
     route: "/dashboard/profile",
     members: [
       { img: "/img/team-4.jpeg", name: "Alexander Smith" },
