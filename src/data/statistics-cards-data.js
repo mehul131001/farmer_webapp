@@ -40,7 +40,7 @@ export const statisticsCardsData = [
     },
   },
   {
-    color: "orange",
+    color: "black",
     icon: ChartBarIcon,
     title: "Sales",
     value: "1,430",
