@@ -187,7 +187,7 @@ export function Home() {
             className="m-0 p-6"
           >
             <Typography variant="h6" color="blue-gray" className="mb-2">
-              Orders Overview
+              Government MSP for Commodity
             </Typography>
             <Typography
               variant="small"
@@ -203,9 +203,9 @@ export function Home() {
           <CardBody className="pt-0">
             {ordersOverviewData.map(
               ({ icon, color, title, description }, key) => (
-                <div key={title} className="flex items-start gap-4 py-3">
+                <div key={title} className="flex items-start gap-4 py-3 ">
                   <div
-                    className={`relative p-1 after:absolute after:-bottom-6 after:left-2/4 after:w-0.5 after:-translate-x-2/4 after:bg-blue-gray-50 after:content-[''] ${
+                    className={` relative p-1  after:absolute after:-bottom-6 after:left-2/4 after:w-0.5 after:-translate-x-2/4 after:bg-blue-gray-50 after:content-[''] ${
                       key === ordersOverviewData.length - 1
                         ? "after:h-0"
                         : "after:h-4/6"
