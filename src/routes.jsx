@@ -13,6 +13,14 @@ const icon = {
   className: "w-5 h-5 text-inherit",
 };
 
+// if(role == farmer) {
+//   export farmer waala nav items
+// }else if (role == consumer) {
+//   export consumer waala nav items
+// }
+
+// For fetching roles, we can either use 
+
 export const routes = [
   {
     layout: "dashboard",
