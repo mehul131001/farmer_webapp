@@ -12,6 +12,7 @@ import {
   Avatar,
   Tooltip,
   Progress,
+  Chip,
 } from "@material-tailwind/react";
 import {
   ClockIcon,
@@ -92,7 +93,7 @@ export function Home() {
             <table className="w-full min-w-[640px] table-auto">
               <thead>
                 <tr>
-                  {["crop", "customers", "reviews", "ratings"].map(
+                  {["crop", "variety","sellers", "price range", "Order"].map(
                     (el) => (
                       <th
                         key={el}
@@ -111,7 +112,7 @@ export function Home() {
               </thead>
               <tbody>
                 {projectsTableData.map(
-                  ({ img, name, members, budget, completion }, key) => {
+                  ({ img, name,variety, members, budget, delivered }, key) => {
                     const className = `py-3 px-5 ${
                       key === projectsTableData.length - 1
                         ? ""
@@ -132,6 +133,16 @@ export function Home() {
                             </Typography>
                           </div>
                         </td>
+                        <td className={className}>
+                          <Typography
+                            variant="small"
+                            className="text-xs font-medium text-blue-gray-600"
+                          >
+                            {variety}
+                          </Typography>
+                        </td>
+                        
+                        
                         <td className={className}>
                           {members.map(({ img, name }, key) => (
                             <Tooltip key={name} content={name}>
@@ -155,22 +166,30 @@ export function Home() {
                             {budget}
                           </Typography>
                         </td>
-                        <td className={className}>
-                          <div className="w-10/12">
-                            <Typography
-                              variant="small"
-                              className="mb-1 block text-xs font-medium text-blue-gray-600"
-                            >
-                              {completion}%
-                            </Typography>
-                            <Progress
-                              value={completion}
-                              variant="gradient"
-                              color={completion === 100 ? "green" : "blue"}
-                              className="h-1"
-                            />
-                          </div>
-                        </td>
+                          {/* <td className={className}>
+                            <div className="w-10/12">
+                              <Typography
+                                variant="small"
+                                className="mb-1 block text-xs font-medium text-blue-gray-600"
+                              >
+                                {completion}%
+                              </Typography>
+                              <Progress
+                                value={delivered}
+                                variant="gradient"
+                                color={completion === 100 ? "green" : "blue"}
+                                className="h-1"
+                              />
+                            </div>
+                          </td> */}
+                          <td className={className}>
+                        <Chip
+                          variant="gradient"
+                          color={delivered ? "green" : "amber"}
+                          value={delivered ? "delivered" : "pending"}
+                          className="py-0.5 px-2 text-[11px] font-medium"
+                        />
+                      </td>
                       </tr>
                     );
                   }
