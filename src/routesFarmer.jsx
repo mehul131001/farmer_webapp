@@ -25,7 +25,7 @@ export const routesFarmer = [
       },
       {
         icon: <UserCircleIcon {...icon} />,
-        // name: "profile",
+        name: "profile",
         path: "/profile",
         element: <Profile />,
       },
