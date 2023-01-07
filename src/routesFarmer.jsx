@@ -6,16 +6,16 @@ import {
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
 } from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+import { Home, Profile, Tables, Notifications } from "@/pages/dashboardFarmer";
 import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
   className: "w-5 h-5 text-inherit",
 };
 
-export const routes = [
+export const routesFarmer = [
   {
-    layout: "dashboard",
+    layout: "dashboardFarmer",
     pages: [
       {
         icon: <HomeIcon {...icon} />,
@@ -25,7 +25,7 @@ export const routes = [
       },
       {
         icon: <UserCircleIcon {...icon} />,
-        name: "profile",
+        // name: "profile",
         path: "/profile",
         element: <Profile />,
       },
@@ -63,4 +63,4 @@ export const routes = [
   },
 ];
 
-export default routes;
+export default routesFarmer;

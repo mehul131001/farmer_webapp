@@ -2,29 +2,29 @@ import { Routes, Route } from "react-router-dom";
 import { Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { IconButton } from "@material-tailwind/react";
 import {
-  Sidenav,
+  CSidenav,
   DashboardNavbar,
   // Configurator,
   Footer,
 } from "@/widgets/layout";
-import routes from "@/routesFarmer";
+import routes from "@/routesConsumer";
 import { useMaterialTailwindController } from "@/context";
 // import { useMaterialTailwindController, setOpenConfigurator } from "@/context";
 
-export function FDashboard() {
+export function CDashboard() {
   const [controller, dispatch] = useMaterialTailwindController();
   const { sidenavType } = controller;
 
   return (
     <div className="min-h-screen bg-blue-gray-50/50">
-      <Sidenav
+      <CSidenav
         routes={routes}
         brandImg={
           sidenavType === "dark" ? "/img/logo-ct.png" : "/img/logo-ct-dark.png"
         }
       />
       <div className="p-4 xl:ml-80">
-        <DashboardNavbar />
+        {/* <DashboardNavbar /> */}
         {/* <Configurator /> */}
         {/* <IconButton
           size="lg"
@@ -38,7 +38,7 @@ export function FDashboard() {
         <Routes>
           {routes.map(
             ({ layout, pages }) =>
-              layout === "dashboardFarmer" &&
+              layout === "dashboardConsumer" &&
               pages.map(({ path, element }) => (
                 <Route exact path={path} element={element} />
               ))
@@ -52,6 +52,6 @@ export function FDashboard() {
   );
 }
 
-FDashboard.displayName = "/src/layout/dashboardFarmer.jsx";
+CDashboard.displayName = "/src/layout/dashboardConsumer.jsx";
 
-export default FDashboard;
+export default CDashboard;
