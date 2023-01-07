@@ -79,7 +79,7 @@ export function Tables() {
                         <Chip
                           variant="gradient"
                           color={delivered ? "green" : "amber"}
-                          value={delivered ? "order now" : "pending"}
+                          value={delivered ? "delivered" : "pending"}
                           className="py-0.5 px-2 text-[11px] font-medium"
                         />
                       </td>
