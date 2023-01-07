@@ -15,7 +15,7 @@ const icon = {
 
 export const routes = [
   {
-    layout: "dashboard",
+    layout: "dashboardFarmer",
     pages: [
       {
         icon: <HomeIcon {...icon} />,
