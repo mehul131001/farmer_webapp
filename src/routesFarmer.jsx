@@ -13,9 +13,9 @@ const icon = {
   className: "w-5 h-5 text-inherit",
 };
 
-export const routesFarmer = [
+export const routes = [
   {
-    layout: "dashboardFarmer",
+    layout: "dashboard",
     pages: [
       {
         icon: <HomeIcon {...icon} />,
@@ -63,4 +63,4 @@ export const routesFarmer = [
   },
 ];
 
-export default routesFarmer;
+export default routes;
