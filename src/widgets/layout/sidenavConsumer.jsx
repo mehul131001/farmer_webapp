@@ -35,7 +35,7 @@ export function CSidenav({ brandImg, brandName, routes }) {
             variant="h6"
             color={sidenavType === "dark" ? "white" : "blue-gray"}
           >
-            Consumer's Dashboard
+            Hi, Evaluator
           </Typography>
         </Link>
         <IconButton
