@@ -26,7 +26,7 @@ import {
   statisticsChartsData,
   projectsTableData,
   ordersOverviewData,
-} from "@/data";
+} from "@/Fdata";
 
 export function Home() {
   return (
