@@ -100,13 +100,7 @@ export function DashboardNavbar() {
               <UserCircleIcon className="h-5 w-5 text-blue-gray-500" />
             </IconButton>
           </Link>
-          {/* <IconButton
-            variant="text"
-            color="blue-gray"
-            onClick={() => setOpenConfigurator(dispatch, true)}
-          >
-            <Cog6ToothIcon className="h-5 w-5 text-blue-gray-500" />
-          </IconButton> */}
+          
           <Menu>
             <MenuHandler>
               <IconButton variant="text" color="blue-gray">
@@ -151,7 +145,7 @@ export function DashboardNavbar() {
                     color="blue-gray"
                     className="mb-1 font-normal"
                   >
-                    <strong>New order</strong> by Travis Scott
+                    <strong>New order</strong> by Shivanshu Dev
                   </Typography>
                   <Typography
                     variant="small"

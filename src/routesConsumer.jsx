@@ -31,7 +31,7 @@ export const routesConsumer = [
       },
       {
         icon: <TableCellsIcon {...icon} />,
-        name: "Customer Reviews",
+        name: "Orders",
         path: "/tables",
         element: <Tables />,
       },
@@ -44,20 +44,14 @@ export const routesConsumer = [
     ],
   },
   {
-    title: "auth pages",
+    title: "See you soon !",
     layout: "auth",
     pages: [
       {
         icon: <ArrowRightOnRectangleIcon {...icon} />,
-        name: "sign in",
+        name: "Log Out",
         path: "/sign-in",
         element: <SignIn />,
-      },
-      {
-        icon: <UserPlusIcon {...icon} />,
-        name: "sign up",
-        path: "/sign-up",
-        element: <SignUp />,
       },
     ],
   },
